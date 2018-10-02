@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A40D3BFC2153809E006ADE46 /* Ship.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40D3BFB2153809E006ADE46 /* Ship.swift */; };
+		A44A62142150D67F0032A9DC /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44A62102150D67E0032A9DC /* Helpers.swift */; };
+		A44A62152150D67F0032A9DC /* CVPixelBuffer+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44A62112150D67E0032A9DC /* CVPixelBuffer+Helpers.swift */; };
+		A44A62162150D67F0032A9DC /* TinyYOLO.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A44A62122150D67E0032A9DC /* TinyYOLO.mlmodel */; };
+		A44A62172150D67F0032A9DC /* YOLO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44A62132150D67E0032A9DC /* YOLO.swift */; };
+		A44A62192150D69A0032A9DC /* ARViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44A62182150D69A0032A9DC /* ARViewModel.swift */; };
+		A44A621C2150DF650032A9DC /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A44A621B2150DF650032A9DC /* StoreKit.framework */; };
 		A4633289213A9C7900CF2A6A /* reactor.scnp in Resources */ = {isa = PBXBuildFile; fileRef = A4633288213A9C7900CF2A6A /* reactor.scnp */; };
 		A49E9A0621440462001694FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A49E9A0421440462001694FE /* Assets.xcassets */; };
 		A49E9A09214404CD001694FE /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = A49E9A07214404CD001694FE /* spark.png */; };
@@ -22,6 +29,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A40D3BFB2153809E006ADE46 /* Ship.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ship.swift; sourceTree = "<group>"; };
+		A44A62102150D67E0032A9DC /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		A44A62112150D67E0032A9DC /* CVPixelBuffer+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CVPixelBuffer+Helpers.swift"; sourceTree = "<group>"; };
+		A44A62122150D67E0032A9DC /* TinyYOLO.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TinyYOLO.mlmodel; sourceTree = "<group>"; };
+		A44A62132150D67E0032A9DC /* YOLO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YOLO.swift; sourceTree = "<group>"; };
+		A44A62182150D69A0032A9DC /* ARViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARViewModel.swift; sourceTree = "<group>"; };
+		A44A621B2150DF650032A9DC /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		A4633288213A9C7900CF2A6A /* reactor.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; name = reactor.scnp; path = "../../ARKitPhysics-master/ARKitPhysics/Particles/reactor.scnp"; sourceTree = "<group>"; };
 		A49E9A0421440462001694FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A49E9A07214404CD001694FE /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
@@ -43,12 +57,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A44A621C2150DF650032A9DC /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A44A620F2150D67E0032A9DC /* TinyYolo Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A44A62182150D69A0032A9DC /* ARViewModel.swift */,
+				A44A62102150D67E0032A9DC /* Helpers.swift */,
+				A44A62112150D67E0032A9DC /* CVPixelBuffer+Helpers.swift */,
+				A44A62122150D67E0032A9DC /* TinyYOLO.mlmodel */,
+				A44A62132150D67E0032A9DC /* YOLO.swift */,
+			);
+			path = "TinyYolo Helpers";
+			sourceTree = "<group>";
+		};
+		A44A621A2150DF650032A9DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A44A621B2150DF650032A9DC /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AE8573411F9D179100D73806 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +91,7 @@
 				A49E9A0421440462001694FE /* Assets.xcassets */,
 				AE85734C1F9D179100D73806 /* Gesture-Recognition-101-CoreML-ARKit */,
 				AE85734B1F9D179100D73806 /* Products */,
+				A44A621A2150DF650032A9DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,7 +106,9 @@
 		AE85734C1F9D179100D73806 /* Gesture-Recognition-101-CoreML-ARKit */ = {
 			isa = PBXGroup;
 			children = (
+				A44A620F2150D67E0032A9DC /* TinyYolo Helpers */,
 				AE85734D1F9D179100D73806 /* AppDelegate.swift */,
+				A40D3BFB2153809E006ADE46 /* Ship.swift */,
 				A49E9A46214806F8001694FE /* Bullet.swift */,
 				A49E9A08214404CD001694FE /* explosion.scnp */,
 				A4633288213A9C7900CF2A6A /* reactor.scnp */,
@@ -118,6 +156,11 @@
 					AE8573491F9D179100D73806 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -162,10 +205,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A44A62192150D69A0032A9DC /* ARViewModel.swift in Sources */,
+				A44A62172150D67F0032A9DC /* YOLO.swift in Sources */,
 				AE8573521F9D179100D73806 /* ViewController.swift in Sources */,
 				AE85734E1F9D179100D73806 /* AppDelegate.swift in Sources */,
+				A44A62162150D67F0032A9DC /* TinyYOLO.mlmodel in Sources */,
 				AE8573651F9D206800D73806 /* example_5s0_hand_model.mlmodel in Sources */,
+				A44A62152150D67F0032A9DC /* CVPixelBuffer+Helpers.swift in Sources */,
+				A44A62142150D67F0032A9DC /* Helpers.swift in Sources */,
 				A49E9A47214806F9001694FE /* Bullet.swift in Sources */,
+				A40D3BFC2153809E006ADE46 /* Ship.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,7 +356,7 @@
 				INFOPLIST_FILE = "Gesture-Recognition-101-CoreML-ARKit/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.emerging-interactions.Gesture-Recognition-101-CoreML-ARKit";
+				PRODUCT_BUNDLE_IDENTIFIER = com.IPShooter.alpha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -323,7 +372,7 @@
 				INFOPLIST_FILE = "Gesture-Recognition-101-CoreML-ARKit/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.emerging-interactions.Gesture-Recognition-101-CoreML-ARKit";
+				PRODUCT_BUNDLE_IDENTIFIER = com.IPShooter.alpha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
